@@ -19,10 +19,10 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-#ember338 {
+.linkedin {
     width: 30%;
     height: auto;
-    position: top left;
+    margin-top: 0;
     
    
       
