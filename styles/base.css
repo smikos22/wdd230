@@ -1,0 +1,62 @@
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:Verdana, Tahoma, sans-serif;
+    color: #333;
+    margin: 0;
+    flex:auto;
+    grid-template-rows: auto 1fr auto;
+}
+
+#ember338 {
+    width: 30%;
+    height: auto;
+    position: top left;
+    
+   
+      
+}
+
+nav a {
+    color: white;
+}
+
+nav svg {
+    background-color: white;
+    
+    
+}
+
+header {
+    background-color: darkgray;
+    color: white;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+   box-shadow: 1px 1px 1px 1px lightblue; 
+   width: 300px;
+   height: 100px;
+   border: 1px solid blue;
+}
+
+ul {
+    width: 300px;
+    height: 200px;
+    border: 1px solid blue;
+}
