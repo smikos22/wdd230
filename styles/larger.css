@@ -5,5 +5,17 @@ nav{
     gap: 3rem;
     color: white;
 }
+
+.card{
+    display:flex;
+    flex-direction: column;
+    float: left;
+    align-items: stretch;
+    width: 250px;
+    height: 300px;
+    border: 2.5px;
+    border-style: solid;
+
+}
     
 }
