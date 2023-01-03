@@ -17,6 +17,9 @@ body {
     margin: 0;
     flex:auto;
     grid-template-rows: auto 1fr auto;
+    display: grid;
+    align-items: left;
+
 }
 
 .linkedin{
@@ -71,12 +74,12 @@ ul {
     flex-direction: column;
     border: 2.5px;
     border-style: solid;
-    margin-right: 30%;
     
 }
 
 #project {
     height: 125px;
+ 
 }
 
 #information {
@@ -87,13 +90,11 @@ ul {
 
 #learning {
     height: 300px;
-    left: 40%;
-
+ 
 }
 
-body {
-    display: grid;
-    align-items: left;
+main{
+    margin-left: 20%;
 }
 
 footer {
