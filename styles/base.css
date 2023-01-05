@@ -73,18 +73,18 @@ ul {
     display: flex;
     border: 2.5px;
     border-style: solid;
+    margin: 10px;
     
 
 }
-
 #project {
     height: 125px;
  
 }
 
 #information {
-    height: 170px;
-    margin-right: 50%;
+    height: 150px;
+    margin-right: 25%;
   
     
 }
