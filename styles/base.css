@@ -64,7 +64,7 @@ h3 {
 
 
 ul {
-    width: 250px;
+    width: 300px;
     height: 400px;
     margin-left: -40px;
 }
@@ -84,18 +84,19 @@ ul {
 
 #information {
     height: 150px;
-    margin-right: 25%;
+    margin-right: 15%;
   
     
 }
 
 #learning {
     height: 300px;
+    
  
 }
 
 main{
-    margin-left: 30%;
+    margin-left: 20%;
 }
 
 footer {
