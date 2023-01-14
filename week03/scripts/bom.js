@@ -1,8 +1,8 @@
-const chapters= getChaptersList;
+let chapters= getChaptersList();
 // existing variable declarations referencing DOM elements
-const arrayInput = document.querySelector('input');
-const arrayButton = document.querySelector('button');
-const arrayList = document.querySelector('list');
+const list = document.querySelector('ul')
+const input = document.querySelector('input')
+const button = document.querySelector('button')
 
 // add this array declaration and assignment statement
 let chaptersArray = getChapterList() || [];
@@ -17,6 +17,9 @@ chaptersArray.forEach(chapter => {
       setChapterList();
       input.value = '';
       input.focus();
+    }
+    else {
+        input.focus();
     }
   });
   function displayList(item) {
@@ -33,33 +36,9 @@ chaptersArray.forEach(chapter => {
       input.focus();
     });
   }
-const list = document.querySelector('ul')
-const input = document.querySelector('input')
-
-const button = document.querySelector('button')
-button.addEventListener('click', () => { 
-    
-    const myItem = input.value;
-
-    if (myItem == '') {
-        input.focus();
-    }
-    else {
-        input.value = '';
-        const listItem = document.createElement('li');
-        const listText = document.createElement('span');
-        const listBtn = document.createElement('button');
-
-        listItem.appendChild(listText);
-        listText.textContent = myItem;
-        listItem.appendChild(listBtn);
-        listBtn.textContent = 'Delete' ;
-        list.appendChild(listItem);
-
-        listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-        });
-
-        input.focus();
-    }
-})
+function setChaptersList(){
+    localStorage.setItem('list', JSON.stringify(chaptersArray));
+}   
+function getChapterList(){
+    return JSON.parse(localStorage.getItem('list'));
+} 
