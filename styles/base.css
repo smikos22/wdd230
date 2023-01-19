@@ -162,16 +162,17 @@ footer {
     height: 700px;
  
 }
+hero-msg h1 {
+    text-align: center;
+}
 
 
 
 .home-title {
     font-size: 2em;
     text-align: center;
-    color: rgb(231, 222, 231)
-}
-hero-msg h1 {
-    text-align: center;
+    color: rgb(231, 222, 231);
+    position: absolute;
 }
 .button-box {
     text-align: center;
