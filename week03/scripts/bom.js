@@ -1,4 +1,4 @@
-let chapters= getChaptersList();
+let chapters= getChapterList();
 // existing variable declarations referencing DOM elements
 const list = document.querySelector('ul')
 const input = document.querySelector('input')
@@ -36,7 +36,7 @@ chaptersArray.forEach(chapter => {
       input.focus();
     });
   }
-function setChaptersList(){
+function setChapterList(){
     localStorage.setItem('list', JSON.stringify(chaptersArray));
 }   
 function getChapterList(){
