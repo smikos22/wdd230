@@ -160,5 +160,19 @@ footer {
 #hero-img {
     width: 100%;
     height: 700px;
+ 
 }
 
+
+
+.home-title {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(231, 222, 231)
+}
+hero-msg h1 {
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
