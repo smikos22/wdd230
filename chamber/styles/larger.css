@@ -1,0 +1,15 @@
+@media only screen and (min-width: 40rem) {
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #45aaf2;
+  }
+
+ .side { grid-template-columns: 4fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
