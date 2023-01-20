@@ -47,3 +47,7 @@ aside {
       "header  header"
       "sidebar content"
       "footer  footer";}
+
+.side h3 {
+    text-align: center;
+}
