@@ -34,19 +34,19 @@ button{
     padding-top:4em;
 
 }
-aside {
-    grid-area: sidebar;
+.side {
     background-color: #45aaf2;
+    padding-left: 1em;
+    background-color: white;
+    padding-right: 1em;
+    padding-bottom: 1em;
+
   }
 
-  .side {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "header  header"
-      "sidebar content"
-      "footer  footer";}
+  
+  div {
+    display: block;
+  }
 
 .side h3 {
     text-align: center;
