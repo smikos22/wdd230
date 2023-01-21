@@ -3,7 +3,7 @@
 
 aside {
     grid-area: sidebar;
-    background-color: #45aaf2;
+ 
   }
 
  .side { grid-column: 1/2;

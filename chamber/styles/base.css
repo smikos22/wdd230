@@ -35,21 +35,29 @@ button{
 
 }
 .side {
-    background-color: #45aaf2;
+    
     padding-left: 1em;
-    background-color: white;
+    background-color: black;
+    color: white;
     padding-right: 1em;
     padding-bottom: 1em;
-
+    width: 250px;
+    position: absolute;
+    font-size: larger;
+    box-shadow: inset;
   }
 
   
-  div {
-    display: block;
-  }
 
-.side h3 {
+.side h2 {
     text-align: center;
+}
+.litchfield {
+    margin-left: 500px;
+}
+
+.litchfield h2 {
+    color: white;
 }
 .navigation {
 	list-style: none;
@@ -84,4 +92,14 @@ button{
 }
 body .information {
     background-color: black;
+}
+
+nav a {
+    color: white;
+}
+body{
+    background-color: black;
+}
+footer {
+    color: white;
 }
