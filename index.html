@@ -96,7 +96,10 @@
             <input type="email" id="email" name="email" required />                    
             <label for="r">Page Rating*</label>
             <input type="text" id="rating" rating="number" required placeholder="Rate from 1 to 10" > 
-            <div class="rangecontainer">
+            <label class="rangecontainer">Page Range</label> <input type="range" name="rating">
+            </label>
+
+<!--            <div class="rangecontainer">
                 <input type="range" min="1" max="10" id="r" name="r" list="ten" required="required">
                 <div class="ratinglabels">
                     <span class="ratevalue">1</span>
@@ -110,7 +113,7 @@
                     <span class="ratevalue">9</span>
                     <span class="ratevalue">10</span>
 
-             </div>
+             </div>-->
             </div>
             <label for="keyphrase">Username*</label>
             <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
