@@ -64,7 +64,7 @@
                 <li>Week 01: <a href="holygrail.html">Grail</a> | <a href="week01/media-query.html">Media-Query</a></li>
                 <li>Week 02:<a href="week02/design.html">Design Principles</a> | <a href="https://codepen.io/sokim02/pen/jOpyMYj">Hamburger</a>| <a href="week02/bom.html">DOM Manipulation</a>
                 <li>Week 03:<a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Load</a> | <a href="https://codepen.io/sokim02/pen/OJwgoxW?editors=1100">Responsive Images</a> | <a href="week03/bom.html">BOM</a>
-                <li>Week 04:<a href="week04/pseudo.html">Pseudo-class Fun</a> | <a href="http://ibb.co/vssLW4g">Combinators Exercise</a> | <a href="week04/tablebuild.html">Table Activity</a>
+                <li>Week 04:<a href="week04/pseudo.html">Pseudo-class Fun</a> | <a href="http://ibb.co/vssLW4g">Combinators Exercise</a> | <a href="week04/tablebuild.html">Table Activity</a> | <a href="week04/form-start/form-start/index.html">Form Activty</a>
                 <li>Week 06:</li>
             </ul>
         </section>
@@ -81,10 +81,45 @@
             <p><span class="label">Number of Visits: </span>
                 <span class="visits"></span></p>
         </section>
+    </main>
+    <main>
+        
 
- 
-           
-        </main>
+        <section class="form" id="contact">
+
+        <form method="post">
+            <div id="contactForm"></div>
+            <h1>Contact Form</h1>
+            <label for="fullname">Name*</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
+            <label for="email">Email address*</label>
+            <input type="email" id="email" name="email" required />                    
+            <label for="r">Page Rating*</label>
+            <input type="text" id="rating" rating="number" required placeholder="Rate from 1 to 10" > 
+            <div class="rangecontainer">
+                <input type="range" min="1" max="10" id="r" name="r" list="ten" required="required">
+                <div class="ratinglabels">
+                    <span class="ratevalue">1</span>
+                    <span class="ratevalue">2</span>
+                    <span class="ratevalue">3</span>
+                    <span class="ratevalue">4</span>
+                    <span class="ratevalue">5</span>
+                    <span class="ratevalue">6</span>
+                    <span class="ratevalue">7</span>
+                    <span class="ratevalue">8</span>
+                    <span class="ratevalue">9</span>
+                    <span class="ratevalue">10</span>
+
+             </div>
+            </div>
+            <label for="keyphrase">Username*</label>
+            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-z]*" required /> <!-- {min,max} -->
+            <label for="keyphrase2">Re-enter Username*</label>
+            <input type="text" id="keyphrase2" name="keyphrase2" />
+            <button id="btnSubmit" type="submit">Send Information</button>
+            <input type="hidden" value="43aster">
+        </form>
+      </section> 
     </main>
     <div class="mapouter"><div class="gmap_canvas"><iframe width="600px" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=litchfield%20park,%20az&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">inserting google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
     <footer>
