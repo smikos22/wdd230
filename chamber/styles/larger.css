@@ -9,3 +9,7 @@ aside {
  .side { grid-column: 1/2;
     
   }
+---------join us---------
+form label.sbs {
+  padding: .4rem 0;
+}

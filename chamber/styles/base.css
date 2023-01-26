@@ -103,3 +103,69 @@ body{
 footer {
     color: white;
 }
+------------------FORM JOIN
+form fieldset{
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10kpx;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: white;
+    margin: 0 1rem;
+    padding: 1rem .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: black;
+    font-size: .8rem;
+    text-align: left;
+    background-color: rgb(223, 236, 241);
+
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: white;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display:block;
+    padding: .75rem 0;
+    color: #555;
+    background-color: rgb(223, 236, 241);
+
+}
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    margin-top: 1rem;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+form textarea {
+    width: 100%
+}
