@@ -76,24 +76,32 @@ function displayRatingValue() {
 rangevalue.addEventListener('change', displayRatingValue);
 rangevalue.addEventListener('input', displayRatingValue);
 //key phrase
-const kp1 = document.querySelector("#keyphrase");
-const kp2 = document.querySelector("#keyphrase2");
-const message = document.querySelector("#formmessage");
 
-kp2.addEventListener("focusout", checkSame);
+//Form at bottom of page.
+
+
+
+const keyphrase = document.querySelector("#keyphrase");
+const keyphrase2 = document.querySelector("#keyphrase2");
+const formMessage = document.querySelector("#contactForm");
+
+keyphrase2.addEventListener("focusout", checkSame);
 
 // This should be refactored.
 function checkSame() {
-	if (kp1.value !== kp2.value) {
-		message.textContent = "Key Phrases DO NOT MATCH!";
+	if (keyphrase.value != keyphrase2.value) {
+		message.textContent = "User name DOES NOT MATCH!";
 		message.style.display = "block";
-		kp2.style.backgroundColor = "#aa3333";
-		kp2.style.color = "#fff";
-		kp2.focus();
-		kp2.value = "";
-	} else {
+		keyphrase2.style.backgroundColor = "#aa3333";
+		keyphrase2.style.color = "#fff";
+		keyphrase2.focus();
+		keyphrase2.value = "";
+		console.log(keyphrase)
+	} 
+	else {
 		message.style.display = "none";
-		kp2.style.backgroundColor = "#fff";
-		kp2.style.color = "#000";
+		keyphrase2.style.backgroundColor = "#fff";
+		keyphrase2.style.color = "#000";
+		console.log(keyphrase2)
 	}
 }
