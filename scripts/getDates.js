@@ -62,7 +62,7 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = Date.now();
+//todayDisplay.textContent = Date.now();
 
 // You can view the localStorage data using the Applications panel in the browsers's DevTools.
 //form//
@@ -73,8 +73,8 @@ function displayRatingValue() {
     rating.innerHTML = rangevalue.value;
 }
 
-rangevalue.addEventListener('change', displayRatingValue);
-rangevalue.addEventListener('input', displayRatingValue);
+//rangevalue.addEventListener('change', displayRatingValue);
+//rangevalue.addEventListener('input', displayRatingValue);
 //key phrase
 
 //Form at bottom of page.
@@ -83,25 +83,28 @@ rangevalue.addEventListener('input', displayRatingValue);
 
 const keyphrase = document.querySelector("#keyphrase");
 const keyphrase2 = document.querySelector("#keyphrase2");
-const formMessage = document.querySelector("#contactForm");
+const message = document.querySelector("#contactForm");
 
 keyphrase2.addEventListener("focusout", checkSame);
 
 // This should be refactored.
 function checkSame() {
 	if (keyphrase.value != keyphrase2.value) {
+		console.log(keyphrase)
+
 		message.textContent = "User name DOES NOT MATCH!";
 		message.style.display = "block";
 		keyphrase2.style.backgroundColor = "#aa3333";
 		keyphrase2.style.color = "#fff";
 		keyphrase2.focus();
 		keyphrase2.value = "";
-		console.log(keyphrase)
+		
 	} 
 	else {
+		console.log(keyphrase2)
 		message.style.display = "none";
 		keyphrase2.style.backgroundColor = "#fff";
 		keyphrase2.style.color = "#000";
-		console.log(keyphrase2)
+		
 	}
 }
