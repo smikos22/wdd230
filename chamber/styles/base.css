@@ -104,8 +104,8 @@ body{
 footer {
     color: white;
 }
-------------------FORM JOIN
-form fieldset{
+/*------------------FORM JOIN */
+form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
     border-radius: 10kpx;
