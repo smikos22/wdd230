@@ -56,8 +56,9 @@ button{
     margin-left: 500px;
 }
 
-.litchfield h2 {
+.litchfield p {
     color: white;
+    font-size: larger;
 }
 .navigation {
 	list-style: none;
