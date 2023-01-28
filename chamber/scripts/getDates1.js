@@ -1,10 +1,9 @@
 let currentDateAndTime = Date()
-console.log("It is now "+currentDateAndTime)
 
 
 let theTotal = total(1,2,3,4,5,6,7,8,9,10)
 
-console.log("The total is "+theTotal)
+
 
 
 function total(...theNumbers){
@@ -18,28 +17,28 @@ function total(...theNumbers){
 
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
+if (modeButton != null) {
+    modeButton.addEventListener("click", () => {
+        if (modeButton.textContent.includes("☑️")) {
+            main.style.background = "#000";
+            main.style.color = "#fff";
+            modeButton.textContent = "❎";
+        } else {
+            main.style.background = "#eee";
+            main.style.color = "#000";
+            modeButton.textContent = "☑️";
+        }
+    });
+};
 
-modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("☑️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		modeButton.textContent = "❎";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		modeButton.textContent = "☑️";
-	}
-});
-
-const todayDisplay = document.querySelector(".today");
-const visitsDisplay = document.querySelector(".visits");
+let todayDisplay = document.querySelector(".currentdate");
+let visitsDisplay = document.querySelector(".visits");
 
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
-
 // determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+if (numVisits != 0) {
+	visitsDisplay = numVisits;
 } else {
 	visitsDisplay.textContent = `This is your first visit!`;
 }
@@ -49,10 +48,11 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay.textContent = Date.now();
+todayDisplay = Date.now();
+//todayDisplay = "message";
 
 /////Join HTML
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
@@ -172,5 +172,5 @@ $(document).ready(function() {
                 console.log(result);
             }, 'json');
         });
-});
+});*/
 
