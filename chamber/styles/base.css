@@ -105,6 +105,12 @@ footer {
     color: white;
 }
 /*------------------FORM JOIN */
+.container {
+    max-width: auto;
+    margin: auto;
+
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
@@ -169,4 +175,17 @@ form label.top input:required:valid {
 }
 form textarea {
     width: 100%
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px; 
+}
+.gmap_camvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
 }
