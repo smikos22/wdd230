@@ -1,0 +1,20 @@
+{
+    "WardName" : "Savannah Ward",
+    "Location" : "Litchfield Park, AZ",
+    "members" : [
+      {
+        "FamilyName" : "Mikos",
+        "MovedIn" : "May, 1, 2023",
+        "Number-of-Family-Members" : 6,
+        "VisitedByBishopric" : "Yes",
+        "FamilyMembers" : [
+          "Christian Mikos, Male, Oct. 20, 1972",
+          "Sarah Mikos, Female, Jan. 26, 1976",
+          "Gage Mikos, Male, Aug. 14, 1996",
+          "Cole Mikos, Male, Nov. 25, 1998",
+          "Caden Mikos, Male, Sept. 25, 2001",
+          "Brock Mikos, Male, Dec. 15, 2003"
+        ]
+      }
+    ]
+  }
