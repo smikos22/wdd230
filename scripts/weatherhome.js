@@ -1,4 +1,4 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Litchfield&APPID=c4ed49c5f1dd57178304a9ec676492d0&units=imperial';
+///const url = 'https://api.openweathermap.org/data/2.5/weather?q=Litchfield&APPID=c4ed49c5f1dd57178304a9ec676492d0&units=imperial';
 
 
 
@@ -19,7 +19,7 @@ function displayResults(data) {
 }
 async function apiFetch() {
     try {
-      const response = await fetch(url);
+      const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Litchfield&APPID=c4ed49c5f1dd57178304a9ec676492d0&units=imperial');
       if (response.ok) {
         const data = await response.json();
         console.log(data); // testing only
