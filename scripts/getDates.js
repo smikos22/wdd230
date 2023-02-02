@@ -111,6 +111,36 @@ function checkSame() {
 }
 //////JSON file
 
-fetch("weeklyAssigments.json")
-	.then(response => response.text())
-	.then(text => console.log(text));
+async function loadData() {
+	const response = await fetch("https://smikos22.github.io/wdd230/weeklyAssignments.json");
+	const data = await response.text();
+	console.log(data);
+
+
+	return data;
+} 
+
+const data = loadData();
+/*let response=fetch("https://smikos22.github.io/wdd230/weeklyAssignments.json")
+.then(response => response.text())
+.then(text => console.log(text));
+console.log(response)
+async function apiLinksFetch(linksUrl) {
+	try {
+		const linksResponse = await fetch(linksUrl);
+		if (linksResponse.ok) {
+		const linksData = await linksResponse.json();
+		console.log(linksData); // testing only
+		//displayData(data); // uncomment when ready
+		return linksData;
+	
+		} else {
+			throw Error(await linksResponse.text());
+		}
+	} catch (error) {
+		console.log(error);
+	}
+}
+	
+let res = apiLinksFetch("https://smikos22.github.io/wdd230/weeklyAssignments.json");
+console.log (res)*/	

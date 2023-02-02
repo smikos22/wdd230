@@ -79,9 +79,10 @@ h3 {
 }
 
 #information {
-    height: 150px;
+    height: 300px;
     margin-right: 5%;
-  
+    font-size: medium;
+    text-align: center;
     
 }
 /*controls box*/
