@@ -1,3 +1,4 @@
+
 let currentDateAndTime = Date()
 
 console.log("It is now "+currentDateAndTime)
@@ -108,3 +109,8 @@ function checkSame() {
 		
 	}
 }
+//////JSON file
+
+fetch("weeklyAssigments.json")
+	.then(response => response.text())
+	.then(text => console.log(text));
