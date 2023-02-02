@@ -1,4 +1,4 @@
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Litchfield&APPID=c4ed49c5f1dd57178304a9ec676492d0&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Litchfield&APPID=c4ed49c5f1dd57178304a9ec676492d0&units=imperial';
 
 
 
