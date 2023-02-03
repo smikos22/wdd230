@@ -113,14 +113,36 @@ function checkSame() {
 
 async function loadData() {
 	const response = await fetch("https://smikos22.github.io/wdd230/weeklyAssignments.json");
-	const data = await response.text();
-	console.log(data);
+	const jsonString = await response.text();
+	
+	const jsonObj = JSON.parse(jsonString);
+	const section = document.querySelector("#learning");
+	const aTags = section.querySelectorAll("a");
+/*	
+	//loop through <a> tags
+	let count = 0
+	for (tag of aTags) {
+		console.log(count)
+		//console.log(tag)
+		console.log(aTags[count])
+		count += 1
 
+	*/	
+	count = 0
+	for (key in jsonObj){
+		for (value in jsonObj[key])
+		{
+			console.log(count)
+			console.log(aTags[count])
+			console.log(jsonObj[key][value])
+			aTags[count].href= jsonObj[key][value]
+			count += 1;
+		}
+	}
+	return;
+}
 
-	return data;
-} 
-
-const data = loadData();
+const jsonString = loadData();
 /*let response=fetch("https://smikos22.github.io/wdd230/weeklyAssignments.json")
 .then(response => response.text())
 .then(text => console.log(text));
