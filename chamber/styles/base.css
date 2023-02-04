@@ -107,7 +107,11 @@ nav a {
 }
 body{
     background-color: black;
-}
+    overflow-x: hidden;
+    width: 100%;
+    }
+    
+
 
 footer {
     color: white;
