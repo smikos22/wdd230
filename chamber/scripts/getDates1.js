@@ -52,23 +52,22 @@ todayDisplay = Date.now();
 //todayDisplay = "message";
 
 
-//async function loadData(){
-//	const section = document.querySelector("#learning");
-//	const aTags = section.querySelectorAll("a");
+//members.json
+import { readFileSync } from 'fs'
 
-/*	count = 0
-	for (key in jsonObj){
-		for (value in jsonObj[key])
-		{
-			console.log(count)
-			console.log(aTags[count])
-			console.log(jsonObj[key][value])
-			aTags[count].href= jsonObj[key][value]
-			count += 1;
-		}
-	}
-	return;
+function getData() {
+	let rawData = readFileSync('data/members.json');
+	console.log(rawData)
+	//console.log(data.Businesses);
+	var BusinessList = data.Businesses;
+//	console.log(BusinessList);
+	$.each(BusinessList, function(i, val) {
+		var imageurl=
+
+		console.log(val);
+
+	});
+
 }
 
-const jsonString = loadData();*/
-    
+getData();
