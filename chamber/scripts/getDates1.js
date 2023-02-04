@@ -51,22 +51,6 @@ localStorage.setItem("visits-ls", numVisits);
 todayDisplay = Date.now();
 //todayDisplay = "message";
 
-export async function myFunction(){
-    const response = await fetch("https://smikos22.github.io/wdd230/chamber/data/members.json");
-	const jsonString = await response.text();
-	
-	const jsonObj = JSON.parse(jsonString);
-
-    console.log(jsonObj);
-    console.log(typeof(jsonObj));
-    for (let key in jsonObj) {
-         console.log(key);
-        }
- //   for (let i = 0; i < jsonObj.length ; i++){
- //       console.log(i);
-//    }
-}
-
 
 //async function loadData(){
 //	const section = document.querySelector("#learning");
