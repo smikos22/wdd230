@@ -1,3 +1,9 @@
+@media only screen and (min-width:420px) {
+    .left-column, .right-column {
+      width: 50%;
+      float: left;
+  }
+}
 header a{
     color: white;
     padding: 1rem;
@@ -8,6 +14,7 @@ header{
     color: white;
     text-align: center;
     font-size: x-large;
+    grid-template-columns: auto 44px;
 }
 
 
@@ -101,6 +108,7 @@ nav a {
 body{
     background-color: black;
 }
+
 footer {
     color: white;
 }
@@ -194,6 +202,7 @@ picture img {
     width: 100%;
     height: auto;
 }
+
 main {
     max-width: 1400px;
     margin: 0 auto;
