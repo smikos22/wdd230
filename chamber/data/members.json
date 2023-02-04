@@ -1,0 +1,81 @@
+{
+    "Businesses":[
+        {
+            "name":"Alhambra Credit Union",
+            "address":"13331 W Indian School Rd. #205 Litchfield Park, AZ 85340",
+            "phoneNumber":"602-246-5120",
+            "url": "https://www.alhambracu.com/",
+            "image": "images/alhambra.jpg",
+            "membershipLevel" : "Silver"
+
+        },
+        {
+            "name":"Dillon's BBQ",
+            "address":"16335 W Northern Ave. Litchfield Park, AZ 85340",
+            "phoneNumber":"623-535-4249",
+            "url": "https://dillonsrestaurant.com/",
+            "image": "images/dillons.jpg",
+            "membershipLevel" : "Gold"
+
+        },
+        {
+            "name":"Executive Clean, LLC",
+            "address":"PO BOX 1764 Litchfield Park, AZ 85340",
+            "phoneNumber":"623-446-3068",
+            "url": "https://executivecleanllc.com/",
+            "image": "images/ExecutiveClean.jpg",
+            "membershipLevel" : "Gold"
+
+        },
+        {
+            "name":"Ignite Yoga",
+            "address":"5110 N Dysart Rd Suite A-166 Litchfield Park, AZ 85340",
+            "phoneNumber":"623-374-7812",
+            "url": "https://www.igniteyogastudios.com/",
+            "image": "images/ignite.jpg",
+            "membershipLevel" : "Bronze"
+
+        },
+        {
+            "name":"La Loma Village",
+            "address":"14154 Denny Blvd. Litchfield Park, AZ 85340",
+            "phoneNumber":"623-537-7500",
+            "url": "https://mms.southwestvalleychamber.org/southwestvalleychamber/mem_lalomavillage",
+            "image": "images/LaLoma.jpg",
+            "membershipLevel" : "Gold"
+
+        },
+        {
+            "name":"Landcare Unlimited, LLC",
+            "address":"PO BOX 611 Litchfield Park, AZ 85340",
+            "phoneNumber":"623-433-3636",
+            "url": "http://www.landcareunlimited.com/",
+            "image": "images/landcare.jpg",
+            "membershipLevel" : "Silver"
+
+        },
+        {
+            "name":"Litchfield Elementary School District",
+            "address":"272 E Sagebrush St. Litchfield Park, AZ 85340",
+            "phoneNumber":"623-535-6000",
+            "url": "https://www.lesd79.org/",
+            "image": "images/litchfieldElemntary.jpg",
+            "membershipLevel" : "Gold"
+
+        }
+
+    ]
+}
+
+
+
+
+
+
+
+
+    ]
+
+
+
+}
