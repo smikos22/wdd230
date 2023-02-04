@@ -56,27 +56,37 @@
 
     <main class="litchfield">
         <picture>
-            <img src="images/golfcourse.jpg" alt="golfcourse" loading="lazy" width="400" height="400" >
+            <source srcset="images/golfcourse-small.webp" media="(max-width: 600px)">
+            <source srcset="images/golfcourse-medium.webp" media="(max-width: 1000px)">
+            <img src="images/golfcourse-large.webp" alt="golfcourse" loading="lazy" width="1400" height="400" >
         </picture>
         <p>Golf Course in Litchfield Park</p>
 
         <picture>
-            <img src="images/farmersMarket.jpg" alt="farmersmarket" loading="lazy" width="400" height="400">
+            <source srcset="images/farmersMarket-small.webp" media="(max-width: 600px)">
+            <source srcset="images/farmersMarket-medium.webp" media="(max-width: 1000px)">
+            <img src="images/farmersMarket-large.webp" alt="farmersmarket" loading="lazy" width="1400" height="400">
         </picture>
         <p>Farmers Market</p>
 
         <picture>
-            <img src="images/lake.jpg" alt="lake" loading="lazy" width="400" height="400">
+            <source srcset="images/lake-small.webp" media="(max-width: 600px)">
+            <source srcset="images/lake-medium.webp" media="(max-width: 1000px)">
+            <img src="images/lake-large.webp" alt="lake" loading="lazy" width="1400" height="400">
         </picture>
         <p>Lake at Litchfield</p>
 
         <picture>
-            <img src="images/wigwam.jpg" alt="wigwam" loading="lazy" width="400" height="400">
+            <source srcset="images/wigwam-small.webp" media="(max-width: 600px)">
+            <source srcset="images/wigwam-medium.webp" media="(max-width: 1000px)">
+            <img src="images/wigwam-large.webp" alt="wigwam" loading="lazy" width="1400" height="400">
         </picture>
         <p>WigWam Resort</p>
 
         <picture>
-            <img src="images/PD-LP-City-Center.jpg" alt="cityCenter" loading="lazy" width="400" height="400">
+            <source srcset="images/PD-LP-City-Center-small.webp" media="(max-width: 600px)">
+            <source srcset="images/PD-LP-City-Center-medium.webp" media="(max-width: 1000px)">
+            <img src="images/PD-LP-City-Center-large.webp" alt="cityCenter" loading="lazy" width="1400" height="400">
         </picture>
         <p>Litchfield City Center</p>
 
@@ -85,7 +95,7 @@
     <footer>
         <p>&copy;2023 - Sarah Mikos | Today's Date: <span id="currentdate" class="currentdate"></span> </p>
      <p class="visits"></p>
-    <script src="scripts/getDates1.js"></script>
+    <script src="scripts/discover.js"></script>
      
     </footer>
 </body>

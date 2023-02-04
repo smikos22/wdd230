@@ -57,7 +57,7 @@ button{
 }
 
 .litchfield p {
-    color: white;
+    color: black;
     font-size: larger;
 }
 .navigation {
@@ -188,4 +188,13 @@ form textarea {
     background:none!important;
     height:500px;
     width:600px;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+main {
+    max-width: 1400px;
+    margin: 0 auto;
 }
