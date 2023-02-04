@@ -58,9 +58,13 @@ export async function myFunction(){
 	const jsonObj = JSON.parse(jsonString);
 
     console.log(jsonObj);
-    for (key in jsonObj){
-        console.log(key);
-    }
+    console.log(typeof(jsonObj));
+    for (let key in jsonObj) {
+         console.log(key);
+        }
+ //   for (let i = 0; i < jsonObj.length ; i++){
+ //       console.log(i);
+//    }
 }
 
 
