@@ -1,6 +1,3 @@
-let currentDateAndTime = Date()
-
-
 let theTotal = total(1,2,3,4,5,6,7,8,9,10)
 
 
@@ -31,16 +28,30 @@ if (modeButton != null) {
     });
 };
 
+let currentDateAndTime = new Date();
+
+let currentDate = currentDateAndTime.toLocaleDateString('en-us', {
+	day: 'numeric',
+	month: 'numeric',
+	year: 'numeric'
+})
+
 let todayDisplay = document.querySelector(".currentdate");
-let visitsDisplay = document.querySelector(".visits");
+console.log("currentDateAndTime: " + currentDateAndTime);
+console.log(todayDisplay);
+
+todayDisplay.innerHTML = currentDate;
 
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
+let visitsDisplay = document.querySelector(".visits");
+console.log(visitsDisplay)
+console.log("numVisits:" + numVisits);
 // determine if this is the first visit or display the number of visits.
 if (numVisits != 0) {
-	visitsDisplay = numVisits;
+	visitsDisplay.innerHTML = "Page Visits:" + numVisits;
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
+	visitsDisplay.innerHTML = `This is your first visit!`;
 }
 
 // increment the number of visits.
@@ -48,26 +59,8 @@ numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
-todayDisplay = Date.now();
+//todayDisplay = Date.now();
 //todayDisplay = "message";
 
 
 //members.json
-import { readFileSync } from 'fs'
-
-function getData() {
-	let rawData = readFileSync('data/members.json');
-	console.log(rawData)
-	//console.log(data.Businesses);
-	var BusinessList = data.Businesses;
-//	console.log(BusinessList);
-	$.each(BusinessList, function(i, val) {
-		var imageurl=
-
-		console.log(val);
-
-	});
-
-}
-
-getData();

@@ -1,9 +1,5 @@
-@media only screen and (min-width:420px) {
-    .left-column, .right-column {
-      width: 50%;
-      float: left;
-  }
-}
+/* Default Styles */
+
 header a{
     color: white;
     padding: 1rem;
@@ -14,7 +10,6 @@ header{
     color: white;
     text-align: center;
     font-size: x-large;
-    grid-template-columns: auto 44px;
 }
 
 
@@ -42,13 +37,12 @@ button{
 
 }
 .side {
-    
     padding-left: 1em;
     background-color: black;
     color: white;
     padding-right: 1em;
     padding-bottom: 1em;
-    width: 250px;
+    width: 350px;
     position: absolute;
     font-size: larger;
  /*   box-shadow: inset;*/
@@ -107,12 +101,7 @@ nav a {
 }
 body{
     background-color: black;
-    overflow-x: hidden;
-    width: 100%;
-    }
-    
-
-
+}
 footer {
     color: white;
 }
@@ -206,11 +195,23 @@ picture img {
     width: 100%;
     height: auto;
 }
-
 main {
     max-width: 1400px;
     margin: 0 auto;
-    overflow-x: hidden;
-    width: 100%;
+}
 
+#discover-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Mobile Style: Listed styles are only modified when the viewport condition is met. */
+@media (max-width: 400px) {
+    .litchfield {
+        margin-left: 0;
+    }
+
+    .side {
+        position: relative;
+    }
 }
