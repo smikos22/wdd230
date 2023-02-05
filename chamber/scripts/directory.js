@@ -2,10 +2,10 @@ fetch('data/members.json')
   .then(response => response.text())
   .then(data => {
 
-    console.log(data);
+  //  console.log(data);
     members = JSON.parse(data);
     membersArray = members["Businesses"]
-    console.log(membersArray)
+  //  console.log(membersArray)
 
     for (let i = 0; i < membersArray.length; i++) {
         //console.log(membersArray[i])
@@ -16,12 +16,12 @@ fetch('data/members.json')
         //para.innerHTML = row["name", "address", "phoneNumber",
         //"url", "image", "membershipLevel"]
         for (key in bussiness) {
-            console.log(bussiness[key]);
+   //         console.log(bussiness[key]);
             para.innerHTML += bussiness[key]
             para.innerHTML += "<br>"
             //para.innerHTML += bussiness[key];
         }
-        console.log("")
+    //    console.log("")
         //document.body.appendChild(para);
     }
     
