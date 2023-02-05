@@ -206,12 +206,13 @@ main {
 }
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .litchfield {
         margin-left: 0;
     }
 
     .side {
         position: relative;
+        width: 100%;
     }
 }
