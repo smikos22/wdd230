@@ -36,8 +36,8 @@ let currentDate = currentDateAndTime.toLocaleDateString('en-US', {
 })
 
 let todayDisplay = document.querySelector(".currentdate"); // The first tag with class currentdate found in the HTML invoking this js file.
-console.log("currentDateAndTime: " + currentDateAndTime);
-console.log(todayDisplay);
+//console.log("currentDateAndTime: " + currentDateAndTime);
+//console.log(todayDisplay);
 
 // Set the html tag contained in todayDisplay to todays date stored in the currentDateAndTime variables.
 todayDisplay.innerHTML = currentDate;
@@ -45,8 +45,8 @@ todayDisplay.innerHTML = currentDate;
 // Visit Variables
 let numVisits = Number(window.localStorage.getItem("visits-ls")); // A number containing the stored value in localStorage
 let visitsDisplay = document.querySelector(".visits"); // The first tag with class visits found in the HTML invoking this js file.
-console.log(visitsDisplay);
-console.log("numVisits: " + numVisits);
+//console.log(visitsDisplay);
+//console.log("numVisits: " + numVisits);
 
 // Determine if this is the first visit or display the number of visits.
 if (numVisits != 0) {
