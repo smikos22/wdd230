@@ -1,14 +1,7 @@
 @media only screen and (min-width: 600px) {
 }
 
-aside {
-    grid-area: sidebar;
- 
-  }
 
- .side { grid-column: 1/2;
-    
-  }
 /*---------join us---------*/
 form label.sbs {
   padding: .4rem 0;
@@ -113,4 +106,8 @@ section a {
 img {
 	height: 75px;
 	max-width: 100%; /* Images are jerks - Seattle*/
+}
+.bigwrapper {
+	display: grid;
+	grid-template-columns: 200px auto;
 }

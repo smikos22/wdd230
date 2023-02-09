@@ -42,8 +42,9 @@
 
     <div id="hero">
             <picture>
-            <source srcset="images/aerial-shot-small.webp" media="(max-width:400px)">    
-            <img id="hero-img" src="images/aerial-shot.jpg" alt="Aerial shot of Litchfield Park">
+            <source srcset="images/aerial-shot-small.webp" media="(max-width:600px)">  
+            <source srcset="images/aerial-shot-medium.webp" media="(max-width:1000px)"> 
+            <img id="hero-img" src="images/aerial-shot-large.webp" alt="Aerial shot of Litchfield Park">
             </picture>
         </div> 
 
@@ -57,6 +58,15 @@
         </section>    
         <section class="weather-card">
             <h2>Weather</h2>
+            <a href="https://api.openweathermap.org/data/2.5/forecast?lat=33.49&lon=-112.35&exclued=minutely,hourly&appid=c4ed49c5f1dd57178304a9ec676492d0&units=imperial"></a>
+            <p>The current temperature in Litchfield Park, AZ is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>        
+        </section>
+        <script src="scripts/weatherhome.js"></script>
+
         </section>
 
         </section class="Spotlights">

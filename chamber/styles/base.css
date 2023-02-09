@@ -14,7 +14,8 @@ header{
 
 
 #hero-img{
-    width: 100%;
+    width: 70%;
+    margin: 2rem 15%;
 }
 
 button{
@@ -195,15 +196,23 @@ picture img {
     width: 100%;
     height: auto;
 }
-main {
-    max-width: 1400px;
-    margin: 0 auto;
-}
 
 #discover-footer {
     margin-top: 20px;
     text-align: center;
 }
+
+/*Weather Card*/
+
+.weather-card {
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+
+
+
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
 @media (max-width: 500px) {
@@ -211,7 +220,7 @@ main {
         margin-left: 0;
     }
 
-    .side {
+    #side {
         position: relative;
         width: 100%;
     }
