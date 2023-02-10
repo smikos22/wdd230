@@ -9,7 +9,7 @@ async function loadData() {
     const randomBusinessMembershipLevel = document.querySelector("#membershipLevel");
     const randomBusinessPhoneNumber = document.querySelector("#phoneNumber");
     const randomBusinessUrl = document.querySelector("#url");
-//    const randomBusinessAddress = document.querySelector("#address");
+    const randomBusinessAddress = document.querySelector("#address");
 
 //	const aTags = section.querySelectorAll("a");
 /*	
@@ -23,13 +23,14 @@ async function loadData() {
 
 	*/	
 	//count = 0
-    let randomNumber = 0
+    let randomNumber = 6
+
 	for (key in jsonObj){
-        console.log(jsonObj[key][randomNumber])
+        //console.log(jsonObj[key][randomNumber])
         let randomBusiness = jsonObj[key][randomNumber]
         randomBusinessName.innerHTML = randomBusiness["name"]
         randomBusinessAddress.innerHTML = randomBusiness["address"]
-        console.log(randomBusinessAddress)
+        //console.log(randomBusinessAddress)
         randomBusinessPhoneNumber.innerHTML = randomBusiness["phoneNumber"]
         randomBusinessMembershipLevel.innerHTML = randomBusiness["membershipLevel"]
         randomBusinessImage.setAttribute("src", randomBusiness["image"])
