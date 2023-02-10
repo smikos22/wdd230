@@ -1,134 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-<!--    <link rel="stylesheet" href="styles/larger.css">-->
-    
+    <!--    <link rel="stylesheet" href="styles/larger.css">-->
+
     <link rel="icon" href="images/favicon.ico">
     <title>Litchfield Park</title>
 </head>
+
 <body>
     <nav>
 
     </nav>
 
     <header>
-        <a href ="#">&#9776;</a>
+        <a href="#">&#9776;</a>
         <a href="https://www.byui.edu">BYU-Idaho</a>
 
         <!--            <a href="week01/index.html">week 01</a>
             <a href="https://codepen.io/sokim02/pen/Expyare">Code Pen</a> -->
         <a href="http://www.linkedin.com/in/sarah-mikos-6844aa234/">LinkedIn</a>
-        
+
         <a href="index.html">Home</a>
         <a href="discover.html">Discover </a>
         <a href="join.html">Join</a>
         <a href="directory.html">Business Directory</a>
         <h2>Litchfield Park</h2>
         <h3>Chamber of Commerce</h3>
-        </header>
+    </header>
     <main>
         <div id="mode">
             ☑️
         </div>
         <div class="container">
-            <div class="flag-l"></div>   
-          <div class="wrapper">
-            <div class="fold-left"></div>
-            <div class="main-banner">
-              <h2>Write something incredibly long in here to see if it wraps</h2>
-              <div class="fold-right"></div>
+            <div class="flag-l"></div>
+            <div class="wrapper">
+                <div class="fold-left"></div>
+                <div class="main-banner">
+                    <h2>Write something incredibly long in here to see if it wraps</h2>
+                    <div class="fold-right"></div>
+                </div>
             </div>
-          </div>
-          <div class="flag-r"></div> 
-          </div>  
+            <div class="flag-r"></div>
+        </div>
 
-
-
-    <div id="hero">
+        <div id="hero">
             <picture>
-            <source srcset="images/aerial-shot-small.webp" media="(max-width:600px)" width="400" height="600">  
-            <source srcset="images/aerial-shot-medium.webp" media="(max-width:1000px)" > 
-            <img id="hero-img" src="images/aerial-shot-large.webp" alt="Aerial shot of Litchfield Park">
+                <source srcset="images/aerial-shot-small.webp" media="(max-width:600px)" width="400" height="600">
+                <source srcset="images/aerial-shot-medium.webp" media="(max-width:1000px)">
+                <img id="hero-img" src="images/aerial-shot-large.webp" alt="Aerial shot of Litchfield Park">
             </picture>
-        </div> 
+        </div>
 
-    <section id="hero-msg">        
-        <button type="button"><h2>Click to join the chamber of commerce</h2></button>
-    </section>  
+        <section id="hero-msg">
+            <button type="button">
+                <h2>Click to join the chamber of commerce</h2>
+            </button>
+        </section>
+
         <section id="events">
-        <h2>Events</h2>
-        <h4>info about event</h4>
-        <p>info about event</p>
-        </section>    
+            <h2>Events</h2>
+            <h4>info about event</h4>
+            <p>info about event</p>
+        </section>
+
         <section class="weather-card">
             <h2>Weather</h2>
             <p>The current temperature in Litchfield Park, AZ is <span id="current-temp"></span></p>
             <figure>
                 <img id="weather-icon" src="" alt="">
                 <figcaption></figcaption>
-            </figure>        
+            </figure>
         </section>
-        <section class ="weather-card">
-        <p>Day Two <span id="futureTempDayTwo"></span></p>
-        <figure>
-            <img id="weather-icon2" src="" alt="">
-            <figcaption></figcaption>
-        </figure>        
 
+        <section class="weather-card">
+            <p>Day Two <span id="futureTempDayTwo"></span></p>
+            <figure>
+                <img id="weather-icon2" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
         </section>
-        <section class ="weather-card">
+
+        <section class="weather-card">
             <p>Day Three <span id="futureTempDayThree"></span></p>
             <figure>
                 <img id="weather-icon3" src="" alt="">
                 <figcaption></figcaption>
-            </figure>        
+            </figure>
             <script src="scripts/weatherhome.js"></script>
-    
-            </section>
-    
-        </section class="Spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="frasesmain" id="business">
-                <section class="frases">
-                  <article>
-                    <figure>
-                      <img src="http://lorempixel.com/300/120/people" alt="">
-                    </figure>
-                    <aside>
-                      <div class="share">share</div>
-                      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </blockquote>
-                      <p class="autor"><strong>Atque, nesciunt,</strong> vitae ipsum facilis ea corporis sapiente. </p>
-                      <p class="data">15 de agosto de 2014.</p>
-                    </aside>						
-                  </article>
-                  <nav class="arrow">
-                    <a href="#" class="prev">></a>
-                    <a href="#" class="next">></a>
-                  </nav>
-                  <nav class="lista">
-                    <ul>
-                      <li><a href="#">Candidato</a></li>
-                      <li><a href="#">Candidato</a></li>
-                      <li><a href="#">Candidato</a></li>
-                      <li><a href="#">Candidato</a></li>
-                    </ul>
-                  </nav>
-                </section>
-              </div>
-              <script src="scripts/testmembers.js"></script>
+        </section>
 
-    </section>
+        </section class="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="business">
+            <section class="spotLights">
+                <article>
+                    <aside>
+                        <!-- <div class="share">share</div>-->
+                        <blockquote>Business Spot Light</blockquote>
+                        <p id="randomBusinessAddress"></p>
+                        <p class="name" id="name"><strong>Space Holder</strong> information </p>
+                        <p class="address" id="address"></p>
+                        <p class="phoneNumber" id="phoneNumber">holder</p>
+                        <p class="membershipLevel" id="membershipLevel"></p>
+                        <a class="url" id="url"></a>
+                        <picture>
+                            <image class="image" id="image"></image>
+                        </picture>
+                    </aside>
+                </article>
+            </section>
+        </div>
+
+        </section>
 
     </main>
     <footer>
         <p>&copy; 2023 - Sarah Mikos - WDD 230 Project</p>
-        <span id="currentdate" class="currentdate"></span> 
-       <p>
+        <span id="currentdate" class="currentdate"></span>
+        <p>
         <p class="visits"></p>
 
     </footer>
@@ -136,4 +131,5 @@
     <script src="scripts/members.js"></script>
 
 </body>
+
 </html>

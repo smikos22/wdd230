@@ -255,18 +255,17 @@ picture img {
 
 /* json random slider */
 
-.frases{background: #4d4d4f; color: #d6d7d8; overflow: hidden;}
-.frases figure{float: left; width: 229px;position: relative;}
-.frases figure img{margin-bottom: -3px;}
-.frases aside{float: left; min-height: 301px; width: 380px; position: relative;}
-.frases aside .share{position: absolute; top: 10px;right: 10px;}
-.frases aside blockquote{padding: 38px 32px; font:30px/33px "EstLineMedium", Times;}
-.frases aside .autor{padding: 0 32px; font:italic 16px "EstLineItalic", Times;}
-.frases aside .data{padding: 0 32px; font:12px arial; color: #5a879d}
-.frases nav.lista{clear: both;display: block;float: none;overflow: hidden; background: #5a879d;}
-.frases nav.lista li{float: left; list-style: none; }
-.frases nav.lista li a{border: 1px solid #FFF; text-transform: uppercase; font:12px arial; color: #FFF; display: block; width: 145px; text-align: center;padding: 5px 0;margin: 5px 2px;}
-nav.arrow a{display: inline-block; border-radius: 50%; background: #767778; color: #FFF; font:bold 14px/21px Arial,sans-serif; width: 21px; height: 21px; text-align: center; margin-left: 5px; text-decoration: none;}
+.spotLights{background: #4d4d4f; color: #d6d7d8; overflow: hidden;}
+.spotLights figure{float: left; width: 229px;position: relative;}
+.spotLights figure img{margin-bottom: -3px;}
+.spotLights aside{float: left; min-height: 301px; width: 380px; position: relative;}
+.spotLights aside .share{position: absolute; top: 10px;right: 10px;}
+.spotLights aside blockquote{padding: 38px 32px; font:30px/33px "EstLineMedium", Times;}
+.spotLights aside .name{padding: 0 32px; font:italic 16px "EstLineItalic", Times;}
+.spotLights aside .phoneNumber{padding: 0 32px; font:12px arial; color: #5a879d}
+.spotLights nav.lista{clear: both;display: block;float: none;overflow: hidden; background: #5a879d;}
+.spotLights nav.lista li{float: left; list-style: none; }
+.spotLights nav.lista li a{border: 1px solid #FFF; text-transform: uppercase; font:12px arial; color: #FFF; display: block; width: 145px; text-align: center;padding: 5px 0;margin: 5px 2px;}
 
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
