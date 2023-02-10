@@ -1,7 +1,5 @@
 /* Default Styles */
-banner {
-    
-}
+
 header a{
     color: white;
     padding: 1rem;
@@ -17,6 +15,7 @@ header{
 
 #hero-img{
     width: 70%;
+    height:auto;
     margin: 2rem 15%;
 }
 
@@ -213,7 +212,61 @@ picture img {
 }
 
 
+/* /*BANNER */
 
+.container h2 {text-align:center; color:#fff; font-family:arial, sans-serif;}
+.container{display: flex;}
+.wrapper{width:80%; display:block;}
+.main-banner {
+  border:2px solid #2f0646;
+  background:#560b82;
+  border-radius:0px 5px;
+  width:100%;
+  margin:auto;
+  position:relative;
+    top:-2px;
+    left:-2px; 
+  padding:0 10px;}
+.flag-l {
+  width:20%; 
+  height:60px; 
+  background:#2f0646;}
+.flag-r { 
+  width:20%;
+  height:60px;
+  background:#2f0646;
+  align-self: flex-end;/*aligns the extention to bottom of container so it has the staggered look*/ }
+.fold-left {
+  border:1px solid #2f0646;
+  width: 0;
+	height: 0;
+	border-bottom: 20px solid #d7a1f7;
+	border-left: 100px solid #2f0646;}
+.fold-right {
+  border:1px solid #2f0646;
+  Position:relative;
+  align-items:flex-end;
+  top:2px;
+  float:right;
+  width: 0;
+	height: 0;
+	border-top: 20px solid #d7a1f7;
+	border-right: 100px solid #2f0646;}
+
+/* json random slider */
+
+.frases{background: #4d4d4f; color: #d6d7d8; overflow: hidden;}
+.frases figure{float: left; width: 229px;position: relative;}
+.frases figure img{margin-bottom: -3px;}
+.frases aside{float: left; min-height: 301px; width: 380px; position: relative;}
+.frases aside .share{position: absolute; top: 10px;right: 10px;}
+.frases aside blockquote{padding: 38px 32px; font:30px/33px "EstLineMedium", Times;}
+.frases aside .autor{padding: 0 32px; font:italic 16px "EstLineItalic", Times;}
+.frases aside .data{padding: 0 32px; font:12px arial; color: #5a879d}
+.frases nav.lista{clear: both;display: block;float: none;overflow: hidden; background: #5a879d;}
+.frases nav.lista li{float: left; list-style: none; }
+.frases nav.lista li a{border: 1px solid #FFF; text-transform: uppercase; font:12px arial; color: #FFF; display: block; width: 145px; text-align: center;padding: 5px 0;margin: 5px 2px;}
+nav.arrow a{display: inline-block; border-radius: 50%; background: #767778; color: #FFF; font:bold 14px/21px Arial,sans-serif; width: 21px; height: 21px; text-align: center; margin-left: 5px; text-decoration: none;}
 
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
