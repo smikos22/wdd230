@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Litchfield Park Chamber of Commerce">
+    <meta name="author" content="Sarah Mikos">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="https://www.facebook.com/sarah.d.mikos/">
+    <meta property="og:title" WDD 230 - Portal - Sarah Mikos>
+    <meta property="og:type" content="website"/> 
+    <meta property="og:image" content="https://unsplash.com/photos/hr1smkEtjzI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+    <meta property="og:url" content="https://unsplash.com/index.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <!--    <link rel="stylesheet" href="styles/larger.css">-->
-
     <link rel="icon" href="images/favicon.ico">
-    <title>Litchfield Park</title>
+
+
+    <title>Litchfield Park Chamber of Commerce</title>
 </head>
 
 <body>
@@ -37,12 +44,13 @@
         <div id="mode">
             ☑️
         </div>
-        <div class="container">
+
+        <div class="container" id="banner-flag" display="none">
             <div class="flag-l"></div>
             <div class="wrapper">
                 <div class="fold-left"></div>
                 <div class="main-banner">
-                    <h2>Write something incredibly long in here to see if it wraps</h2>
+                    <h2>Please attend the Litchfield Chamber of Commerce meet and greet Wednesday at 7:00 p.m.</h2>
                     <div class="fold-right"></div>
                 </div>
             </div>
@@ -96,23 +104,39 @@
         </section>
 
         </section class="spotlights">
-        <h2>Member Spotlights</h2>
         <div id="business">
             <section class="spotLights">
                 <article>
-                    <aside>
-                        <!-- <div class="share">share</div>-->
-                        <blockquote>Business Spot Light</blockquote>
-                        <p id="randomBusinessAddress"></p>
-                        <p class="name" id="name"><strong>Space Holder</strong> information </p>
-                        <p class="address" id="address"></p>
-                        <p class="phoneNumber" id="phoneNumber">holder</p>
-                        <p class="membershipLevel" id="membershipLevel"></p>
-                        <a class="url" id="url"></a>
-                        <picture>
-                            <image class="image" id="image"></image>
-                        </picture>
-                    </aside>
+                    <h2>Member Spotlights</h2>
+                    <div class="flex-container">
+                        <div class="flex-child gold">
+                            
+                                
+                                <p id="randomBusinessAddress"></p>
+                                <p class="name" id="name"><strong></strong></p>
+                                <p class="address" id="address"></p>
+                                <p class="phoneNumber" id="phoneNumber"></p>
+                                <p class="membershipLevel" id="membershipLevel"></p>
+                                <a class="url" id="url"></a>
+                                <picture>
+                                    <image class="image" id="image"></image>
+                                </picture>
+                            </div>
+                     
+
+                            <div class="flex-child gold">
+                                
+                                <p id="RandomBusinessAddress"></p>
+                                <p class="name" id="secondName"><strong></strong></p>
+                                <p class="address" id="secondAddress"></p>
+                                <p class="phoneNumber" id="secondPhoneNumber"></p>
+                                <p class="membershipLevel" id="secondMembershipLevel"></p>
+                                <a class="url" id="secondUrl"></a>
+                                <picture>
+                                    <image class="image" id="secondImage"></image>
+                                </picture>
+                            </div>
+                    </div>
                 </article>
             </section>
         </div>

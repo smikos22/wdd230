@@ -42,6 +42,13 @@ let todayDisplay = document.querySelector(".currentdate");
 
 todayDisplay.innerHTML = currentDate;
 
+let numDay = currentDateAndTime.getDay();
+//console.log(numDay);
+
+if (numDay == 5 || numDay == 6 || numDay==0) {
+    document.getElementById("banner-flag").style.display = "none";
+}
+
 // get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 let visitsDisplay = document.querySelector(".visits");
@@ -58,9 +65,9 @@ if (numVisits != 0) {
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
-// show todays date.
-//todayDisplay = Date.now();
-//todayDisplay = "message";
 
-
-//members.json
+//join chamber button
+document.getElementById("hero-msg").onclick= function(){
+    location.href = "https://smikos22.github.io/wdd230/chamber/join.html";
+    
+}

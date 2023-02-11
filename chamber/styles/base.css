@@ -254,18 +254,31 @@ picture img {
 	border-right: 100px solid #2f0646;}
 
 /* json random slider */
+#business h2 {
+    text-align: center
+}
+.spotLights{
+    background: #4d4d4f; 
+    color: white; 
+    overflow: hidden;}
 
-.spotLights{background: #4d4d4f; color: #d6d7d8; overflow: hidden;}
-.spotLights figure{float: left; width: 229px;position: relative;}
-.spotLights figure img{margin-bottom: -3px;}
-.spotLights aside{float: left; min-height: 301px; width: 380px; position: relative;}
-.spotLights aside .share{position: absolute; top: 10px;right: 10px;}
-.spotLights aside blockquote{padding: 38px 32px; font:30px/33px "EstLineMedium", Times;}
-.spotLights aside .name{padding: 0 32px; font:italic 16px "EstLineItalic", Times;}
-.spotLights aside .phoneNumber{padding: 0 32px; font:12px arial; color: #5a879d}
-.spotLights nav.lista{clear: both;display: block;float: none;overflow: hidden; background: #5a879d;}
-.spotLights nav.lista li{float: left; list-style: none; }
-.spotLights nav.lista li a{border: 1px solid #FFF; text-transform: uppercase; font:12px arial; color: #FFF; display: block; width: 145px; text-align: center;padding: 5px 0;margin: 5px 2px;}
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    height: auto;
+    
+} 
+.flex-child:first-child{
+    margin-right: 20px;
+} 
+
+.url{
+    color: white;
+    font-size: medium;
+}
 
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
