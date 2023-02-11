@@ -31,7 +31,7 @@ button{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: -100px;
-    margin-left: 350px;
+    margin-left: 250px;
 }
 
 #events{
@@ -260,10 +260,14 @@ picture img {
 .spotLights{
     background: #4d4d4f; 
     color: white; 
-    overflow: hidden;}
+    overflow: hidden;
+}
+    
 
 .flex-container {
     display: flex;
+    align-items: center;
+    
 }
 
 .flex-child {
@@ -282,7 +286,7 @@ picture img {
 
 
 /* Mobile Style: Listed styles are only modified when the viewport condition is met. */
-@media (max-width: 500px) {
+/*@media (max-width: 100%) {
     .litchfield {
         margin-left: 0;
     }
@@ -290,5 +294,8 @@ picture img {
     #side {
         position: relative;
         width: 100%;
+    }*/
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
     }
-}
