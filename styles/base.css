@@ -284,3 +284,7 @@ input:valid + input::before {
 	margin: 0;
 	flex: 1 1 auto;
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
