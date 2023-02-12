@@ -1,12 +1,22 @@
+let currentDateAndTime = new Date();
 
-let currentDateAndTime = Date()
+let currentDate = currentDateAndTime.toLocaleDateString('en-us', {
+	day: 'numeric',
+	month: 'numeric',
+	year: 'numeric'
+})
 
-console.log("It is now "+currentDateAndTime)
+let todayDisplay = document.querySelector(".currentdate");
+//console.log("currentDateAndTime: " + currentDateAndTime);
+//console.log(todayDisplay);
 
+todayDisplay.innerHTML = currentDate;
 
+let numDay = currentDateAndTime.getDay();
+//console.log(numDay);
 let theTotal = total(1,2,3,4,5,6,7,8,9,10)
 
-console.log("The total is "+theTotal)
+//console.log("The total is "+theTotal)
 
 
 function total(...theNumbers){
@@ -45,7 +55,7 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 /*const options = {weeday: 'long', day: 'numberic', month: 'long', year:'numeric'};
 document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-Us', options);*/
 // initialize display elements
-const todayDisplay = document.querySelector(".today");
+//const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
 
 // get the stored value in localStorage
@@ -132,9 +142,6 @@ async function loadData() {
 	for (key in jsonObj){
 		for (value in jsonObj[key])
 		{
-			console.log(count)
-			console.log(aTags[count])
-			console.log(jsonObj[key][value])
 			aTags[count].href= jsonObj[key][value]
 			count += 1;
 		}

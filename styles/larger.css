@@ -17,5 +17,10 @@ nav{
     border-style: solid;
 
 }
+html, body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
     
 }
