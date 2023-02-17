@@ -94,23 +94,33 @@ button{
 .responsive #menu::before {
 	content: "X";
 }
-body .information {
-    background-color: black;
+body .information  {
+    background-color: blue;
+    width:100%;
 }
 
 nav a {
     color: white;
 }
 body{
-    background-color: black;
+    background-color: blue;
 }
 footer {
     color: white;
 }
 /*------------------FORM JOIN */
+
 .container {
     max-width: 80%;
     margin: auto;
+    color: white;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: x-large;
+
+
 
 }
 
@@ -182,15 +192,11 @@ form textarea {
 
 .mapouter {
     position:relative;
-    text-align:right;
-    height:500px;
-    width:600px; 
+    text-align:center;
 }
 .gmap_camvas {
     overflow:hidden;
-    background:none!important;
-    height:500px;
-    width:600px;
+    background:none;
 }
 
 picture img {

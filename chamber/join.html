@@ -12,88 +12,94 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
- <!--   <meta property="og:title" WDD 230 - Portal Sarah Mikos> -->
-    <meta property="og:type" content="website"/> 
-    <meta property="og:image" content="https://unsplash.com/photos/hr1smkEtjzI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
+    <!--   <meta property="og:title" WDD 230 - Portal Sarah Mikos> -->
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://unsplash.com/photos/hr1smkEtjzI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">
     <meta property="og:url" content="https://unsplash.com/index.html">
     <meta property="fb:app_id" content="https://www.facebook.com/sarah.d.mikos/">
     <title>Join Lichfield Chamber of Commerce</title>
 </head>
 
 <body>
-    <section class="information"></section>
-    <nav>
-        <a href="https://www.byui.edu">BYU-Idaho</a>
-        <a href="http://www.linkedin.com/in/sarah-mikos-6844aa234/">LinkedIn</a>
-    </nav>
-
-<header>
-      <h1>Join Us</h1>
-    <div class="container">
-
-        <form class="well form-horizontal" action="thankyou.html" method="get"  id="contact_form" >
-    <fieldset>
-    
-    <!-- Form Name -->
-    <legend></legend>
-    </fieldset>
-
-    
-      <h1>Litchfield Chamber of Commerce</h1>
- <!--         <form method="get" action="thankyou.html"> -->
-    
-              <fieldset>
-                  <legend>Membership Information</legend>
-                  <label class="top">First Name* <input type="text" name="fname" required></label>
-                  <label class="top">Last Name* <input type="text" name="lname" required></label>
-                  <label class="top">Cell Phone Number <input type="tel" name="phone" placeholder="1235551234" required></label>
-                  <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                  <label class="top">Business Name <input type="text" name="Business" required></label>
-                  <label class="top">Business Position Title <input type="text" name="position" pattern="[A-Za-z]" required></label>
-
-                </fieldset>
-              
-              <fieldset>
-                  <legend>Membership Level</legend>
-                  
-                  <label class="sbs"><input type="radio" name="level" value="np"> NP Membership is for non profit organizaitons and there is no fee.</label>
-                  <label class="sbs"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
-                  <label class="sbs"><input type="radio" name="level" value="silver"> Silver Membership</label>
-                  <label class="sbs"><input type="radio" name="level" value="gold"> Gold Membership</label>
-
-              </fieldset>
-
-              <fieldset>
-                  <legend>Business Description</legend>
-                  <label class="bottom">
-                    <textarea class="text" name="comment" placeholder="Briefly describe your business">Briefly describe your business</textarea>
-                  </label>
-              </fieldset>
-              
-              <input type="submit" value = "Join" class="submitBtn">
-    <!--      </form>  -->
-      <h2>Litchfield Chamber of Commerce</h2>
+    <header>
+        <section class="information"></section>
+        <nav>
+            <a href="https://www.byui.edu">BYU-Idaho</a>
+            <a href="http://www.linkedin.com/in/sarah-mikos-6844aa234/">LinkedIn</a>
+        </nav>
+    </header>
 
 
-  <nav class="clearfix">
-  </nav>
+    <div class="container"></div>
 
-    
-    <div class="mapouter">
-        <div class="gmap_canvas"><iframe width="600px" height="450px" id="gmap_canvas" src="https://maps.google.com/maps?q=litchfield%20park,%20az&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-<!--            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>-->
- <!--           <a href="https://www.embedgooglemap.net"></a> -->
- <!--           <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>-->
-        </div>
-    </div>
-<footer>
-     <p>&copy; 2023 - Sarah Mikos - WDD 230 Join Project</p>
-     <span id="currentdate" class="currentdate"></span>
-     <p>
-     <p class="visits"></p>
+        <form class="well form-horizontal" action="thankyou.html" method="get" id="contact_form">
 
-</footer>
-    <script src="scripts/chamberdate.js"></script>
+
+            <h1>Litchfield Chamber of Commerce</h1>
+
+            <!--         <form method="get" action="thankyou.html"> -->
+
+            <fieldset>
+                <legend>Membership Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Cell Phone Number <input type="tel" name="phone" placeholder="1235551234"
+                        required></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Business Name <input type="text" name="Business" required></label>
+                <label class="top">Business Position Title <input type="text" name="position" pattern="[A-Za-z]"
+                        required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+
+                <label class="sbs"><input type="radio" name="level" value="np"> NP Membership is for non profit
+                    organizaitons and there is no fee.</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="gold"> Gold Membership</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Description</legend>
+                <label class="bottom">
+                    <textarea class="text" name="comment"
+                        placeholder="Briefly describe your business">Briefly describe your business</textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Join" class="submitBtn">
+            <!--      </form>  -->
+            <h2>Litchfield Chamber of Commerce</h2>
+
+            <nav class="clearfix">
+            </nav>
+
+
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=litchfield%20park,%20az&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    <!--            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>-->
+                    <!--           <a href="https://www.embedgooglemap.net"></a> -->
+                    <!--           <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>-->
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2023 - Sarah Mikos - WDD 230 Join Project</p>
+                <span id="currentdate" class="currentdate"></span>
+                <p>
+                <p class="visits"></p>
+
+            </footer>
+            <script src="scripts/chamberdate.js"></script>
+        </form>
 
 </body>
+
 </html>
